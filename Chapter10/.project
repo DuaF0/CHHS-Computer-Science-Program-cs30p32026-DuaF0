@@ -14,4 +14,36 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src/SkillBuilders/images/die1.gif</name>
+			<type>1</type>
+			<location>/Users/dua/Downloads/die1.gif</location>
+		</link>
+		<link>
+			<name>src/SkillBuilders/images/die2.gif</name>
+			<type>1</type>
+			<location>/Users/dua/Downloads/die2.gif</location>
+		</link>
+		<link>
+			<name>src/SkillBuilders/images/die3.gif</name>
+			<type>1</type>
+			<location>/Users/dua/Downloads/die3.gif</location>
+		</link>
+		<link>
+			<name>src/SkillBuilders/images/die4.gif</name>
+			<type>1</type>
+			<location>/Users/dua/Downloads/die4.gif</location>
+		</link>
+		<link>
+			<name>src/SkillBuilders/images/die5.gif</name>
+			<type>1</type>
+			<location>/Users/dua/Downloads/die5.gif</location>
+		</link>
+		<link>
+			<name>src/SkillBuilders/images/die6.gif</name>
+			<type>1</type>
+			<location>/Users/dua/Downloads/die6.gif</location>
+		</link>
+	</linkedResources>
 </projectDescription>

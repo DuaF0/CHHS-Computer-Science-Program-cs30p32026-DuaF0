@@ -1,8 +1,15 @@
+/*
 
+Program: Roll.java          Last Date of this Revision: Feb 17, 2026
 
+Purpose: Simulates rolling two dice and displays their faces randomly on a GUI when the user clicks a button.
 
+Author: Dua Fatima, 
+School: CHHS
+Course: Computer Programming 3010
+ 
 
-
+*/
 
 package SkillBuilders;
 
@@ -19,20 +26,28 @@ import java.awt.Font;
 import java.awt.Color;
 import javax.swing.JLabel;
 
-public class Roll {
+public class Roll
+{
 
 	private JFrame frame;
 
 	/**
 	 * Launch the application.
 	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
+	public static void main(String[] args) 
+	{
+		EventQueue.invokeLater(new Runnable() 
+		{
+			public void run() 
+			{
+				try 
+				{
 					Roll window = new Roll();
 					window.frame.setVisible(true);
-				} catch (Exception e) {
+				} 
+				
+					catch (Exception e) 
+				{
 					e.printStackTrace();
 				}
 			}
@@ -42,7 +57,8 @@ public class Roll {
 	/**
 	 * Create the application.
 	 */
-	public Roll() {
+	public Roll() 
+	{
 		initialize();
 	}
 
@@ -52,35 +68,39 @@ public class Roll {
 	private void initialize() 
 	{
 		
-		ImageIcon d1 = new ImageIcon("../Chapter10/src/SkillBuilders/die1.gif");
-		ImageIcon d2 = new ImageIcon("../Chapter10/src/SkillBuilders/die2.gif");
-		ImageIcon d3 = new ImageIcon("../Chapter10/src/SkillBuilders/die3.gif");
-		ImageIcon d4 = new ImageIcon("../Chapter10/src/SkillBuilders/die4.gif");
-		ImageIcon d5 = new ImageIcon("../Chapter10/src/SkillBuilders/die5.gif");
-		ImageIcon d6 = new ImageIcon("../Chapter10/src/SkillBuilders/die6.gif");
+		ImageIcon d1 = new ImageIcon(getClass().getResource("/SkillBuilders/images/die1.gif"));
+		ImageIcon d2 = new ImageIcon(getClass().getResource("/SkillBuilders/images/die2.gif"));
+		ImageIcon d3 = new ImageIcon(getClass().getResource("/SkillBuilders/images/die3.gif"));
+		ImageIcon d4 = new ImageIcon(getClass().getResource("/SkillBuilders/images/die4.gif"));
+		ImageIcon d5 = new ImageIcon(getClass().getResource("/SkillBuilders/images/die5.gif"));
+		ImageIcon d6 = new ImageIcon(getClass().getResource("/SkillBuilders/images/die6.gif"));
 		
 		
 		frame = new JFrame();
+		frame.getContentPane().setBackground(new Color(255, 218, 245));
 		frame.setBounds(100, 100, 425, 427);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
 		JPanel panel = new JPanel();
-		panel.setBounds(0, 10, 402, 367);
+		panel.setBackground(new Color(255, 218, 245));
+		panel.setBounds(6, 6, 413, 387);
 		frame.getContentPane().add(panel);
 		panel.setLayout(null);
 		
 		JLabel dieFace = new JLabel("");
-		dieFace.setBounds(64, 182, 137, 113);
+		dieFace.setBackground(new Color(211, 216, 207));
+		dieFace.setBounds(65, 182, 137, 113);
 		panel.add(dieFace);
 		
 		JLabel dieFace2 = new JLabel("");
-		dieFace2.setBounds(209, 182, 137, 113);
+		dieFace2.setBounds(270, 182, 137, 113);
 		panel.add(dieFace2);
 		
 		JButton btnNewButton = new JButton("Roll Die");
-		btnNewButton.setBackground(Color.ORANGE);
-		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 23));
+		btnNewButton.setForeground(new Color(216, 161, 188));
+		btnNewButton.setBackground(new Color(216, 142, 183));
+		btnNewButton.setFont(new Font("Chalkduster", Font.PLAIN, 23));
 		btnNewButton.addActionListener(new ActionListener() 
 		{
 			public void actionPerformed(ActionEvent e) 
@@ -144,11 +164,10 @@ public class Roll {
 				
 			}
 		});
-		btnNewButton.setBounds(27, 25, 350, 147);
+		btnNewButton.setBounds(32, 30, 350, 148);
 		panel.add(btnNewButton);
 		
 		
-
 	}
 
 }
