@@ -72,7 +72,7 @@ public class CountVowels
            in.close();
 
 
-           // Output total vowels
+           // Output total vowels 1
            System.out.println("Total number of vowels: " + vowelSum);
       }
      
