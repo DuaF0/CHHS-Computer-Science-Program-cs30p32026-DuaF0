@@ -1,0 +1,3 @@
+Name: sd Grade Level: 32 Semester: 3 Grades: 43%, 54%, 65%, 77%,  Average: 59.8%
+Name: dua Grade Level: 12 Semester: 2 Grades: 89%, 90%, 55%, 0%,  Average: 58.5%
+Name: dua Grade Level: 12 Semester: 2 Grades: 23%, 45%, 56%, 76%,  Average: 50%
