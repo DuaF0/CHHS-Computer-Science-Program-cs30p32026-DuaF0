@@ -24,25 +24,25 @@ public class WordGuess
 		// Create a File object for the word list
 		File file = new File("w.txt");
 
-
 		// Declare file reader and buffered reader
 		FileReader fr;
 		BufferedReader br;
-
 
 		// Random number generator for selecting a word 
 		Random random = new Random();
 
 
 		int numWords = 0, wordToGuess;
+		
         // the word to guess
 		String secretWord = "";
+		
         // dashed version of the word and updated after guesses
 		String wordSoFar = "", updatedWord = "";
 		String letterGuess;
-                     // count of user guesses
+		
+        // count of user guesses
 		int numGuesses = 0;
-
 
 		//select seceret word from file
 		try
@@ -50,8 +50,7 @@ public class WordGuess
 			// Initialize FileReader and BufferedReader
 			fr = new FileReader(file);
 			br = new BufferedReader(fr);
-
-
+			
 			// Count number of words in file
 			String line;
 			while ((line = br.readLine()) != null)
@@ -62,7 +61,6 @@ public class WordGuess
 
 			br.close();
 			fr.close();
-
 
 			// Pick random word index
 			wordToGuess = random.nextInt(numWords);
@@ -75,6 +73,7 @@ public class WordGuess
 			{
 				secretWord = br.readLine();
 			}
+			
 			br.close();
 			fr.close();
 		}
@@ -106,13 +105,10 @@ public class WordGuess
 			wordSoFar += "_";
 		}
 
-
 		System.out.println("Word: " + wordSoFar);
-
 
 		// Scanner for user input
 		Scanner input = new Scanner(System.in);
-
 
 		//game loop
 		do
@@ -120,11 +116,9 @@ public class WordGuess
 			System.out.print("Guess a letter (or ! to quit): ");
 			letterGuess = input.nextLine();
 
-
 			// Increase guess count
 			numGuesses++;
 			updatedWord = "";
-
 
 			// Check each letter in secret word
 			for (int i = 0; i < secretWord.length(); i++)

@@ -63,7 +63,6 @@ public class MyFilePt2
 
 }
 
-
 /* 
 zzz.txt file exists.
 Would you like to (K)eep or (D)elete the file?

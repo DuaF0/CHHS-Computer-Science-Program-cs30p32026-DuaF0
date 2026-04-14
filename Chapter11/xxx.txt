@@ -6,4 +6,4 @@ jumped
 over 
 a 
 brown 
-log.
+log
