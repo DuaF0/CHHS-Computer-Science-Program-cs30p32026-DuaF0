@@ -14,11 +14,4 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>src/ReflectionLogs/Reflection Log .pdf</name>
-			<type>1</type>
-			<location>C:/Users/68115502/Downloads/Reflection Log .pdf</location>
-		</link>
-	</linkedResources>
 </projectDescription>
