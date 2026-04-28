@@ -16,17 +16,20 @@ package Mastery;
 //Minivan class extends the Vehicle class and adds sliding door information
 public class MiniVan extends Vehicle
 {
+	
+	
 	 // Instance variable to store whether the minivan has sliding doors
     private boolean slidingDoors;
 
     // Constructor initializes inherited Vehicle values
     // and the minivan's sliding door feature
-    public MiniVan(double city, double hwy, int seats, double cargo, boolean doors)
+    public MiniVan(double city, double hwy, int seats, double cargo, boolean d)
     {
         super(city, hwy, seats, cargo);
-        slidingDoors = doors;
+        slidingDoors = d;
+        
     }
-
+    
     // Returns the type of vehicle
     public String vehicleType()
     {

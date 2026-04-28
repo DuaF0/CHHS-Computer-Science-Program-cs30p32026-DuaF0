@@ -60,10 +60,7 @@ public abstract class Vehicle
     // Returns vehicle information as a formatted string
     public String toString()
     {
-        return "City MPG: " + fuelEconomyCity +
-               "\nHighway MPG: " + fuelEconomyHwy +
-               "\nSeating Capacity: " + seatingCapacity +
-               "\nCargo Volume: " + cargoVolume;
+        return "City MPG: " + fuelEconomyCity + "\nHighway MPG: " + fuelEconomyHwy + "\nSeating Capacity: " + seatingCapacity + "\nCargo Volume: " + cargoVolume  + " cubic feet.";
     }
 }
 
