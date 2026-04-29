@@ -18,7 +18,7 @@ public class Car extends Vehicle
     private String model;
 
     // Constructor
-    public Car(double city, double hwy, int seats, double cargo, String m)
+    public Car(double city, double hwy, int seats, double cargo, String m, double color)
     {
         super(city, hwy, seats, cargo);
         model = m;

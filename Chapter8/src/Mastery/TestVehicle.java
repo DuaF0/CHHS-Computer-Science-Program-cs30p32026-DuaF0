@@ -12,39 +12,93 @@ Course: CSE3130
 
 package Mastery;
 
-//TestVehicle class is used to create and display different vehicle objects
-public class TestVehicle 
+import java.util.Scanner;
+
+public class TestVehicle
 {
-	    public static void main(String[] args)	    {
-	    	// Creates a Car object with city MPG, highway MPG,
-	        // seating capacity, cargo volume, and model
-	        Car c1 = new Car(16, 23, 4, 8.8, " Nissan GT-R");
+    public static void main(String[] args)
+    {
+        Scanner input = new Scanner(System.in);
 
-	        // Creates a Truck object with city MPG, highway MPG,
-	        // seating capacity, cargo volume, and towing capacity
-	        Truck t1 = new Truck(23, 26, 5, 45.5, 6000);
+        double city, hwy, cargo, color;
+        int seats;
 
-	        // Creates a Minivan object with city MPG, highway MPG,
-	        // seating capacity, cargo volume, and sliding door feature
-	        MiniVan m1 = new MiniVan(9.5, 38, 7, 66, false );
+        // Car info
+        System.out.println("Create a Car");
 
-	        // Prints the Car object information
-	        System.out.println(c1);
-	        System.out.println();
+        System.out.print("City MPG: ");
+        city = input.nextDouble();
 
-	        // Prints the Truck object information
-	        System.out.println(t1);
-	        System.out.println();
+        System.out.print("Highway MPG: ");
+        hwy = input.nextDouble();
 
-	        // Prints the Minivan object information
-	        System.out.println(m1);
-	        System.out.println();
-	    }
-	}
+        System.out.print("Seating Capacity: ");
+        seats = input.nextInt();
 
-/*
+        System.out.print("Cargo Volume: ");
+        cargo = input.nextDouble();
+        input.nextLine();
 
+        System.out.print("Model Name: ");
+        String model = input.nextLine();
+        
+        System.out.print("Color: ");
+        color = input.nextDouble();
 
+        Car c1 = new Car(city, hwy, seats, cargo, model, color);
 
-*/
+        // Truck info
+        System.out.println("\nCreate a Truck");
+
+        System.out.print("City MPG: ");
+        city = input.nextDouble();
+
+        System.out.print("Highway MPG: ");
+        hwy = input.nextDouble();
+
+        System.out.print("Seating Capacity: ");
+        seats = input.nextInt();
+
+        System.out.print("Cargo Volume: ");
+        cargo = input.nextDouble();
+
+        System.out.print("Towing Capacity: ");
+        double towing = input.nextDouble();
+        
+
+        Truck t1 = new Truck(city, hwy, seats, cargo, towing);
+
+        // Minivan info
+        System.out.println("\nCreate a Minivan");
+
+        System.out.print("City MPG: ");
+        city = input.nextDouble();
+
+        System.out.print("Highway MPG: ");
+        hwy = input.nextDouble();
+
+        System.out.print("Seating Capacity: ");
+        seats = input.nextInt();
+
+        System.out.print("Cargo Volume: ");
+        cargo = input.nextDouble();
+
+        System.out.print("Sliding Doors? (true/false): ");
+        boolean doors = input.nextBoolean();
+
+        MiniVan m1 = new MiniVan(city, hwy, seats, cargo, doors);
+
+        // Output
+        System.out.println("\n--- Vehicle Information ---");
+
+        System.out.println(c1);
+        System.out.println();
+
+        System.out.println(t1);
+        System.out.println();
+
+        System.out.println(m1);
+    }
+}
+
 
