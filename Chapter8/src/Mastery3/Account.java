@@ -12,8 +12,11 @@ import java.text.NumberFormat;
 
 public class Account
 {
+	// Stores account balance
 	private double balance;
+	// Customer linked to account
 	private Customer cust;
+	// Unique account ID
 	private String acctID;
 
 	// Constructor
@@ -27,8 +30,10 @@ public class Account
 	// Blank account constructor
 	public Account(String ID)
 	{
+		// Starts balance at zero
 		balance = 0;
 		cust = new Customer("", "", "","", "", "");
+		// Creates ID using first initial and last name
 		acctID = ID;
 	}
 
@@ -49,6 +54,7 @@ public class Account
 	{
 		if (amt > 0)
 		{
+			// Adds money to balance
 			balance += amt;
 			System.out.println("Deposit successful.");
 		}
@@ -64,6 +70,7 @@ public class Account
 	{
 		if (amt <= balance)
 		{
+			// Removes money from balance
 			balance -= amt;
 			System.out.println("Withdrawal successful.");
 		}
@@ -80,16 +87,19 @@ public class Account
 		cust.changeStreet();
 	}
 
+	// Change customer city
 	public void changeCity()
 	{
 		cust.changeCity();
 	}
 
+	// Change customer province
 	public void changeProvince()
 	{
 		cust.changeProvince();
 	}
 
+	// Change customer postal code
 	public void changePostalCode()
 	{
 		cust.changePostalCode();
@@ -118,6 +128,8 @@ public class Account
 		String accountString;
 
 		accountString = "Account ID: " + acctID + "\n";
+		
+		// Adds customer information
 		accountString += cust.toString();
 		accountString += "Current Balance: " + money.format(balance);
 
