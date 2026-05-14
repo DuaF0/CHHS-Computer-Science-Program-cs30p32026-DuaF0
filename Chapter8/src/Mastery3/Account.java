@@ -24,7 +24,7 @@ public class Account
 	{
 		balance = bal;
 		cust = new Customer(fName, lName, street,city, province, postalCode);
-		acctID = fName.substring(0,1) + lName;
+		acctID = fName.substring(0,1) + lName +(int)(Math.random() * 1000) ;
 	}
 
 	// Blank account constructor
